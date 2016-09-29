@@ -9,7 +9,7 @@ volumes:
 
 services:
     pgmaster:
-        image: paunin/postgresql-cluster-pgsql
+        image: tiagoor/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -26,7 +26,7 @@ services:
 
             #database we want to use for application
             POSTGRES_PASSWORD: monkey_pass
-            POSTGRES_USER: monkey_user
+            POSTGRES_USER: monkey_vser
             POSTGRES_DB: monkey_db
 
             CONFIGS: "listen_addresses:'*'"
@@ -51,7 +51,7 @@ services:
                     - pgmaster
 #<<< Branch 1
     pgslave1:
-        image: paunin/postgresql-cluster-pgsql
+        image: tiagoor/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -74,7 +74,7 @@ services:
 
     # Add more slaves if required
     pgslave2:
-        image: paunin/postgresql-cluster-pgsql
+        image: tiagoor/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -98,7 +98,7 @@ services:
 #>>> Branch 1
 #<<< Branch 2
     pgslave3:
-        image: paunin/postgresql-cluster-pgsql
+        image: tiagoor/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -120,7 +120,7 @@ services:
                     - pgslave3
 
     pgslave4:
-        image: paunin/postgresql-cluster-pgsql
+        image: tiagoor/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -143,7 +143,7 @@ services:
                     - pgslave4
 #>>> Branch 2
     pgpool:
-        image: paunin/postgresql-cluster-pgpool
+        image: tiagoor/postgresql-cluster-pgpool
 #        build:
 #            context: .
 #            dockerfile: Pgpool.Dockerfile
