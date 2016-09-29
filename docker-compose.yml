@@ -25,9 +25,9 @@ services:
             CLUSTER_NODE_NETWORK_NAME: pgmaster # (default: hostanme of the node)
 
             #database we want to use for application
-            POSTGRES_PASSWORD: monkey_pass
-            POSTGRES_USER: monkey_vser
-            POSTGRES_DB: monkey_db
+            POSTGRES_PASSWORD: clvster
+            POSTGRES_USER: clvster
+            POSTGRES_DB: clvster_db
 
             CONFIGS: "listen_addresses:'*'"
                                   # in format variable1:value1[,variable2:value2[,...]]
@@ -143,7 +143,7 @@ services:
                     - pgslave4
 #>>> Branch 2
     pgpool:
-        image: tiagoor/postgresql-cluster-pgpool
+        image: paunin/postgresql-cluster-pgpool
 #        build:
 #            context: .
 #            dockerfile: Pgpool.Dockerfile
