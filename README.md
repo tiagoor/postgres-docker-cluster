@@ -1,3 +1,4 @@
+# tor@openstack.eti.br
 # Streaming replication cluster for pgsql + pgpool2
 
 [This project](https://github.com/paunin/postgres-docker-cluster) includes dockerfiles for postgresql cluster and example of [docker-compose](./docker-compose.yml) file to start this cluster.
