@@ -1,7 +1,7 @@
 # tor@openstack.eti.br
 # Streaming replication cluster for pgsql + pgpool2
 
-[This project](https://github.com/paunin/postgres-docker-cluster) includes dockerfiles for postgresql cluster and example of [docker-compose](./docker-compose.yml) file to start this cluster.
+[This project](https://github.com/tiagoor/postgres-docker-cluster) includes dockerfiles for postgresql cluster and example of [docker-compose](./docker-compose.yml) file to start this cluster.
 Directory [k8s](./k8s) contains information for building this cluster in kubernetes
 
 Also this example of cluster setup suitable for production environment as it has fault protection with auto failover system.
