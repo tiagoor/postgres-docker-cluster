@@ -9,7 +9,7 @@ volumes:
 
 services:
     pgmaster:
-        image: tiagoor/postgresql-cluster-pgsql
+        image: paunin/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -51,7 +51,7 @@ services:
                     - pgmaster
 #<<< Branch 1
     pgslave1:
-        image: tiagoor/postgresql-cluster-pgsql
+        image: paunin/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -74,7 +74,7 @@ services:
 
     # Add more slaves if required
     pgslave2:
-        image: tiagoor/postgresql-cluster-pgsql
+        image: paunin/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -98,7 +98,7 @@ services:
 #>>> Branch 1
 #<<< Branch 2
     pgslave3:
-        image: tiagoor/postgresql-cluster-pgsql
+        image: paunin/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
@@ -120,7 +120,7 @@ services:
                     - pgslave3
 
     pgslave4:
-        image: tiagoor/postgresql-cluster-pgsql
+        image: paunin/postgresql-cluster-pgsql
 #        build:
 #            context: .
 #            dockerfile: Pgsql.Dockerfile
